@@ -18,3 +18,5 @@ def answer(request):
         return render(request,"result.html",{"res":ans})
     except ValueError:
         return render(request,"result.html",{"res":'Empty Feild'})    
+
+
