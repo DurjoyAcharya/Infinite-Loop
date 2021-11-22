@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-u1up(!viv)38u#-=8c)aoi&$-df^n)2c*=l)=644r(b1p)(9cm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Loop',
+    #'Loop',
 ]
 
 MIDDLEWARE = [
@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
-os.path.join(BASE_DIR,'static')    
+os.path.join(BASE_DIR,'/static')    
 ]
 STATIC_ROOT=os.path.join(BASE_DIR,'assets')
 
