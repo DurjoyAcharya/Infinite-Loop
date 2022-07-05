@@ -1,13 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>InfiniteLoop</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>InfiniteLoop</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+  <!-- Start of REVE Chat Script-->
+  <script type="text/javascript">
+    window.$_REVECHAT_API ||
+      (function (d, w) {
+        var r = ($_REVECHAT_API = function (c) {
+          r._.push(c);
+        });
+        w.__revechat_account = "2627630";
+        w.__revechat_version = 2;
+        r._ = [];
+        var rc = d.createElement("script");
+        rc.type = "text/javascript";
+        rc.async = true;
+        rc.setAttribute("charset", "utf-8");
+        rc.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "static.revechat.com/widget/scripts/new-livechat.js?" +
+          new Date().getTime();
+        var s = d.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(rc, s);
+      })(document, window);
+  </script>
+  <!-- End of REVE Chat Script -->
 </html>
