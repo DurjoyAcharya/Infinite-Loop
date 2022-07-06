@@ -3,20 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserListComponent } from './user-list/user-list.component';
+import { CountryComponent } from './country/country.component';
 import { HeaderComponent } from './header/header.component';
+import { StudentComponent } from './student/student.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    HeaderComponent
+    HeaderComponent,
+    StudentComponent,
+    CountryComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+  public Tree() {
+    console.log('Tree');
+  }
+}
