@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CountryComponent } from './country/country.component';
 import { HeaderComponent } from './header/header.component';
+import { OuthModule } from './outh/outh.module';
 import { StudentComponent } from './student/student.component';
 import { UserListComponent } from './user-list/user-list.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,7 @@ import { UserListComponent } from './user-list/user-list.component';
     StudentComponent,
     CountryComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, OuthModule],
   providers: [],
   bootstrap: [AppComponent],
 })
