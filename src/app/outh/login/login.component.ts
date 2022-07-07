@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+  // name: string = 'Durjoy Acharya';
   constructor() {}
-
   ngOnInit(): void {}
-  public login(): void {
-    console.log('Login');
+  getName(name: string): void {
+    alert(name);
+  }
+  getWarn(w: string) {
+    console.warn(w);
   }
 }

@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
-  getDate() {
+  ngOnInit(): void {
     console.log('Hello World');
-    return new Date();
+  }
+  public Done() {
+    alert('Submit Successfully');
   }
 }
