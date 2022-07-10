@@ -38,12 +38,16 @@
     class="validate mb-3 form-control"
     type="text"
     placeholder="e-mail"
+    #box
+    (keyup)="getData(box.value)"
   />
   <input
     id="iban"
     class="validate mb-3 form-control"
-    type="text"
+    type="password"
+    #box
     placeholder="IBAN account number"
+    (keyup)="getData(box.value)"
   />
   <button
     type="button"
@@ -53,4 +57,5 @@
   >
     Submit
   </button>
+  <p>Email Value is: {{ title }}</p>
 </div>

@@ -6,13 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  // name: string = 'Durjoy Acharya';
+  name: string = 'Oniket Acharya';
+  surname: string = 'Acharya';
+  disable: boolean = false;
   constructor() {}
   ngOnInit(): void {}
-  getName(name: string): void {
-    alert(name);
-  }
-  getWarn(w: string) {
-    console.warn(w);
-  }
 }

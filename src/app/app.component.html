@@ -1,4 +1,7 @@
 <h1 class="oop">Hello {{ title }}</h1>
-<app-header-cmp></app-header-cmp>
-<app-login></app-login>
+<!-- <app-header-cmp></app-header-cmp> -->
+
+<app-login *ngIf="check()"></app-login>
+<app-clock></app-clock>
 <!-- <app-clock></app-clock> -->
+<!-- <app-counter></app-counter> -->

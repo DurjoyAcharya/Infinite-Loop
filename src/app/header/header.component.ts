@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   constructor() {}
-
+  title: string = '';
   ngOnInit(): void {
     console.log('Hello World');
   }
   public Done() {
     alert('Submit Successfully');
+  }
+  public getData(msg: string) {
+    console.log(msg);
+    this.title = msg;
   }
 }

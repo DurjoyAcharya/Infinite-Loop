@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { OuthModule } from './outh/outh.module';
 import { StudentComponent } from './student/student.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { CounterComponent } from './counter/counter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,7 @@ import { UserListComponent } from './user-list/user-list.component';
     HeaderComponent,
     StudentComponent,
     ClockComponent,
+    CounterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, OuthModule],
   providers: [],

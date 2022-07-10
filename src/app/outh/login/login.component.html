@@ -1,10 +1,11 @@
-<p>login works!</p>
-<button (click)="getName('Abhishek Acharya')">Click Me</button>
-<button
-  type="button"
-  id="submitButton"
-  class="mb-3 btn btn-outline-success"
-  (click)="getWarn('This is Just a warning')"
->
-  Click Me For Warn
-</button>
+<h1 class="head">{{ name }}</h1>
+<input
+  type="text"
+  name=""
+  placeholder="EliteBook"
+  [value]="name"
+  disabled="{{ disable }}"
+/>
+<br />
+<br />
+<input type="text" name="" id="" [value]="surname" [disabled]="disable" />

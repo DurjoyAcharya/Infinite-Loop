@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Durjoy Acharya';
+  public check(): boolean {
+    return false;
+  }
 }
