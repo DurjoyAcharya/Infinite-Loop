@@ -1,4 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Rubik+Moonrocks&display=swap");
 .oop {
-  color: brown;
   text-align: center;
+  color: green;
+  font-family: "Lobster Two", cursive;
+}
+.oo {
+  text-align: center;
+  color: green;
+  font-family: "Lobster Two", cursive;
 }

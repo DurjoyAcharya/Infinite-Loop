@@ -7,7 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Durjoy Acharya';
+  items: number[] = [];
+  init(): void {
+    for (let i = 0; i < 10; i++) this.items.push(i);
+  }
+  ngOnInit(): void {
+    this.init();
+  }
+  ngOnDestroy(): void {
+    console.log('destroyed');
+  }
   public check(): boolean {
-    return false;
+    return true;
   }
 }
