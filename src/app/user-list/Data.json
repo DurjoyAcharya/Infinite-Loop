@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Eco<sup>+</sup>",
+    "price": "$64.00"
+  },
+  {
+    "id": 2,
+    "name": "Xiaomi",
+    "price": "$270"
+  },
+  {
+    "id": 3,
+    "name": "Macbook Pro",
+    "price": "$564.00"
+  },
+  {
+    "id": 4,
+    "name": "Samsung",
+    "price": "$164.00"
+  },
+  {
+    "id": 5,
+    "name": "Microsoft Surface",
+    "price": "$364.00"
+  },
+  {
+    "id": 6,
+    "name": "Apple Siri",
+    "price": "$864.00"
+  },
+  {
+    "id": 7,
+    "name": "British American Tobacco",
+    "price": "$764.00"
+  },
+  {
+    "id": 8,
+    "name": "Vivo smart phone",
+    "price": "$84.00"
+  },
+  {
+    "id": 9,
+    "name": "Casio watch",
+    "price": "$70.00"
+  }
+]

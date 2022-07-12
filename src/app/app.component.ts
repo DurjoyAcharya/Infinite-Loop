@@ -14,10 +14,7 @@ export class AppComponent {
   ngOnInit(): void {
     this.init();
   }
-  ngOnDestroy(): void {
-    console.log('destroyed');
-  }
   public check(): boolean {
-    return true;
+    return false;
   }
 }

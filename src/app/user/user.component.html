@@ -1,0 +1,21 @@
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let pro of product">
+      <tr>
+        <td>{{ pro.id }}</td>
+        <td>{{ pro.name }}</td>
+        <td>{{ pro.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+  <h4>{{ University }}</h4>
+</div>
