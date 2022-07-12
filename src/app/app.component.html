@@ -1,5 +1,6 @@
 <div>
   <h3 class="oop">Hello {{ title }}</h3>
+  <h3 class="oop">Hello {{ ipAddress }}</h3>
 </div>
 <div class="oo" *ngIf="check()">
   <p *ngFor="let itr of items; let i = index">
@@ -9,7 +10,31 @@
     <span style="color: red"></span>
   </p>
 </div>
-<app-user></app-user>
+
+<div id="watermark" class="unselectable">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea natus, fuga
+  debitis, quibusdam dolores labore ut eligendi asperiores cumque rem, quo
+  deserunt impedit molestiae itaque accusamus blanditiis dolore molestias alias!
+</div>
+<style>
+  #watermark {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 999;
+    opacity: 0.5;
+    text-align: right;
+    color: red;
+  }
+  .unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+</style>
+<!-- <app-user></app-user> -->
 <!-- <app-header-cmp></app-header-cmp> -->
 
 <!-- <app-login *ngIf="check()"></app-login>
