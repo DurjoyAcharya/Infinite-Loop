@@ -1,0 +1,29 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Data Table From RestApi Call</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: warp">
+    <tr *ngFor="let user of users">
+      <th scope="row">{{ user.id }}</th>
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        {{ user.address.street }}, {{ user.address.city }},
+        {{ user.address.suite }},
+        {{ user.address.zipcode }}
+      </td>
+      <td>{{ user.phone }}</td>
+    </tr>
+  </tbody>
+</table>
