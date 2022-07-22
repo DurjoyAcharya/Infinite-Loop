@@ -4,8 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
+import { FridayComponent } from './friday/friday.component';
 import { HeaderComponent } from './header/header.component';
 import { OuthModule } from './outh/outh.module';
+import { PipesComponent } from './pipes/pipes.component';
 import { ProductService } from './product.service';
 import { StudentComponent } from './student/student.component';
 import { UserListComponent } from './user-list/user-list.component';
@@ -18,6 +20,8 @@ import { UserComponent } from './user/user.component';
     StudentComponent,
     CounterComponent,
     UserComponent,
+    PipesComponent,
+    FridayComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, OuthModule, HttpClientModule],
   providers: [ProductService],

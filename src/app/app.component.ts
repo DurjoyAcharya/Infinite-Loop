@@ -8,6 +8,37 @@ import { Component } from '@angular/core';
 export class AppComponent {
   constructor(private http: HttpClient) {}
   title = 'Durjoy Acharya';
+  heading: string = 'Nested For Loop';
+  Users: any[] = [
+    {
+      name: 'Durjoy Acharya',
+      phone: '01876068550',
+      email: 'da-durjoy@outlook.com',
+      accounts: ['Facebook', 'Twitter', 'Instagram'],
+    },
+    {
+      name: 'Mira Bakshi',
+      phone: '01714809550',
+      email: 'durjoy.tourist@gmail.com',
+      accounts: ['Viver', 'Linkdin', 'Tiktok'],
+    },
+    {
+      name: 'Sreya',
+      phone: '01965750560',
+      email: 'durjoy.acharya120@gmail.com',
+      accounts: ['Bluebook', 'Imo', 'Whatsapp'],
+    },
+    {
+      name: 'Akash',
+      phone: '01389894894',
+      email: 'Akash990@outlook.com',
+      accounts: ['Facebook', 'Twitter', 'Instagram'],
+    },
+  ];
+  color = 'red';
+  getColor() {
+    this.color = 'blue';
+  }
   items: number[] = [];
 
   init(): void {
